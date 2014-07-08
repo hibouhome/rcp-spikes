@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_srKgQAaHEeSAj_iU7CvYHg" elementId="org.eclipse.e4.ide.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_srKgQQaHEeSAj_iU7CvYHg" label="application" width="300" height="500">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_srTqMAaHEeSAj_iU7CvYHg">
+      <children xsi:type="advanced:Perspective" xmi:id="_srTqMQaHEeSAj_iU7CvYHg">
+        <children xsi:type="basic:Part" xmi:id="_srTqNAaHEeSAj_iU7CvYHg" contributionURI="bundleclass://com.hibouhome.rcp.spikes.dnd/com.hibouhome.rcp.spikes.dnd.ListPart" label=""/>
+      </children>
+    </children>
+  </children>
+</application:Application>
