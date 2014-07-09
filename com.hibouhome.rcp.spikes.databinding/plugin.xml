@@ -7,6 +7,10 @@
       <product
             name="com.hibouhome.rcp.spikes.databinding"
             application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="appName"
+               value="com.hibouhome.rcp.spikes.databinding">
+         </property>
       </product>
    </extension>
 
