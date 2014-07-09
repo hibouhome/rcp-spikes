@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.hibouhome.rcp.spikes.emf/src" modelPluginID="com.hibouhome.rcp.spikes.emf"
+    modelName="Stockists" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>stockists.ecore</foreignModel>
+  <genPackages prefix="Stockists" basePackage="com.hibouhome.rcp.spikes.emf" disposableProviderFactory="true"
+      ecorePackage="stockists.ecore#/">
+    <genClasses ecoreClass="stockists.ecore#//Country">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute stockists.ecore#//Country/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference stockists.ecore#//Country/regions"/>
+    </genClasses>
+    <genClasses ecoreClass="stockists.ecore#//Region">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute stockists.ecore#//Region/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference stockists.ecore#//Region/stockists"/>
+    </genClasses>
+    <genClasses ecoreClass="stockists.ecore#//Stockist">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute stockists.ecore#//Stockist/name"/>
+    </genClasses>
+    <genClasses ecoreClass="stockists.ecore#//Stockists">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference stockists.ecore#//Stockists/countries"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

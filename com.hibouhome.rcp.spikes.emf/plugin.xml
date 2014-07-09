@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated stockists -->
+      <package
+            uri="http://www.hibouhome.com/spikes/stockists"
+            class="com.hibouhome.rcp.spikes.emf.stockists.StockistsPackage"
+            genModel="model/stockists.genmodel"/>
+   </extension>
+
+</plugin>
