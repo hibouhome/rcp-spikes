@@ -8,7 +8,6 @@ import org.eclipse.e4.ui.model.application.ui.basic.MPart;
 import org.eclipse.e4.ui.model.application.ui.basic.MPartStack;
 import org.eclipse.e4.ui.workbench.modeling.EModelService;
 import org.eclipse.e4.ui.workbench.modeling.EPartService;
-import org.eclipse.e4.ui.workbench.modeling.EPartService.PartState;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -41,7 +40,7 @@ public class PartSelect {
 
 	private void showPart(final String id) {
 		final MPartStack partstack = (MPartStack) modelService.find("simplepartstack", application);
-		final MPart part = partService.showPart(id, PartState.ACTIVATE);
+		final MPart part = partService.findPart(id);
 		part.setVisible(true);
 		partstack.setSelectedElement(part);
 	}
