@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_-rYzYAkXEeSEl6WNhrVoXw" elementId="org.eclipse.e4.ide.application" bindingContexts="_-rYzaQkXEeSEl6WNhrVoXw">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_-rYzYAkXEeSEl6WNhrVoXw" elementId="org.eclipse.e4.ide.application" bindingContexts="_-rYzaQkXEeSEl6WNhrVoXw">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_-rYzYQkXEeSEl6WNhrVoXw" label="com.hibouhome.rcp.spikes.partvisibility" width="500" height="400">
-    <children xsi:type="advanced:PerspectiveStack" xmi:id="_-rYzgAkXEeSEl6WNhrVoXw">
-      <children xsi:type="advanced:Perspective" xmi:id="_-rYzgQkXEeSEl6WNhrVoXw">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_-rYzggkXEeSEl6WNhrVoXw">
-          <children xsi:type="basic:PartStack" xmi:id="_-rYzgwkXEeSEl6WNhrVoXw" elementId="simplepartstack">
-            <children xsi:type="basic:Part" xmi:id="_zUq9UAkYEeSEl6WNhrVoXw" elementId="simplepart.0" visible="false" contributionURI="bundleclass://com.hibouhome.rcp.spikes.partvisibility/com.hibouhome.rcp.spikes.partvisibility.SimplePart" label="Part 1"/>
-            <children xsi:type="basic:Part" xmi:id="_32MAsAkYEeSEl6WNhrVoXw" elementId="simplepart.1" visible="false" contributionURI="bundleclass://com.hibouhome.rcp.spikes.partvisibility/com.hibouhome.rcp.spikes.partvisibility.SimplePart" label="Part 2"/>
-            <children xsi:type="basic:Part" xmi:id="_6S2QYAkYEeSEl6WNhrVoXw" elementId="simplepart.2" visible="false" contributionURI="bundleclass://com.hibouhome.rcp.spikes.partvisibility/com.hibouhome.rcp.spikes.partvisibility.SimplePart" label="Part 3"/>
-          </children>
-        </children>
-      </children>
+    <children xsi:type="basic:PartStack" xmi:id="_-rYzgwkXEeSEl6WNhrVoXw" elementId="simplepartstack">
+      <children xsi:type="basic:Part" xmi:id="_zUq9UAkYEeSEl6WNhrVoXw" elementId="simplepart.0" visible="false" contributionURI="bundleclass://com.hibouhome.rcp.spikes.partvisibility/com.hibouhome.rcp.spikes.partvisibility.SimplePart" label="Part 1"/>
+      <children xsi:type="basic:Part" xmi:id="_32MAsAkYEeSEl6WNhrVoXw" elementId="simplepart.1" visible="false" contributionURI="bundleclass://com.hibouhome.rcp.spikes.partvisibility/com.hibouhome.rcp.spikes.partvisibility.SimplePart" label="Part 2"/>
+      <children xsi:type="basic:Part" xmi:id="_6S2QYAkYEeSEl6WNhrVoXw" elementId="simplepart.2" visible="false" contributionURI="bundleclass://com.hibouhome.rcp.spikes.partvisibility/com.hibouhome.rcp.spikes.partvisibility.SimplePart" label="Part 3"/>
     </children>
     <mainMenu xmi:id="_-rYzeQkXEeSEl6WNhrVoXw" elementId="menu:org.eclipse.ui.main.menu"/>
     <trimBars xmi:id="_-rYzhQkXEeSEl6WNhrVoXw">
