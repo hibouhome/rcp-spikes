@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="com.hibouhome.rcp.spikes.visiblewhen"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.hibouhome.rcp.spikes.visiblewhen/css/default.css">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+      <propertyTester
+            class="com.hibouhome.rcp.spikes.visiblewhen.handlers.PerspectivePropertyTester"
+            id="com.hibouhome.propertytester.perspective"
+            namespace="com.hibouhome.property"
+            properties="perspectiveId"
+            type="java.lang.Object">
+      </propertyTester>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.definitions">
+      <definition
+            id="com.hibouhome.expression.perspective1">
+         <with
+               variable="org.eclipse.e4.ui.model.application.ui.advanced.MPerspective">
+            <test
+                  forcePluginActivation="true"
+                  property="com.hibouhome.property.perspectiveId"
+                  value="com.hibouhome.perspective2">
+            </test>
+         </with>
+      </definition>
+      <definition
+            id="com.hibouhome.expression.perspective2">
+         <with
+               variable="org.eclipse.e4.ui.model.application.ui.advanced.MPerspective">
+            <test
+                  forcePluginActivation="true"
+                  property="com.hibouhome.property.perspectiveId"
+                  value="com.hibouhome.perspective1">
+            </test>
+         </with>
+      </definition>
+   </extension>
+
+</plugin>

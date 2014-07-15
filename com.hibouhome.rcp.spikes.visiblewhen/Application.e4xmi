@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_Mk3xcAvmEeS5WO48TpZ3sg" elementId="org.eclipse.e4.ide.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_Mk3xcQvmEeS5WO48TpZ3sg" label="com.hibouhome.rcp.spikes.visiblewhen" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_Mk3xkAvmEeS5WO48TpZ3sg" elementId="com.hibouhome.perspectiveStack">
+      <children xsi:type="advanced:Perspective" xmi:id="_Mk3xkQvmEeS5WO48TpZ3sg" elementId="com.hibouhome.perspective1" selectedElement="_jOPLAAvmEeS5WO48TpZ3sg" label="Perspective 1">
+        <children xsi:type="basic:Part" xmi:id="_jOPLAAvmEeS5WO48TpZ3sg" elementId="" contributionURI="bundleclass://com.hibouhome.rcp.spikes.visiblewhen/com.hibouhome.rcp.spikes.visiblewhen.parts.Perspective1LabelPart"/>
+      </children>
+      <children xsi:type="advanced:Perspective" xmi:id="_VIOSkAvmEeS5WO48TpZ3sg" elementId="com.hibouhome.perspective2" selectedElement="_e5hNgAvmEeS5WO48TpZ3sg" label="Perspective 2">
+        <children xsi:type="basic:Part" xmi:id="_e5hNgAvmEeS5WO48TpZ3sg" elementId="" contributionURI="bundleclass://com.hibouhome.rcp.spikes.visiblewhen/com.hibouhome.rcp.spikes.visiblewhen.parts.Perspective2LabelPart"/>
+      </children>
+    </children>
+    <trimBars xmi:id="_Mk3xlQvmEeS5WO48TpZ3sg">
+      <children xsi:type="menu:ToolBar" xmi:id="_Mk3xlgvmEeS5WO48TpZ3sg" elementId="toolbar:org.eclipse.ui.main.toolbar"/>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_Mk3xfQvmEeS5WO48TpZ3sg" elementId="com.hibouhome.rcp.spikes.visiblewhen.handler.showPerspective1Command" contributionURI="bundleclass://com.hibouhome.rcp.spikes.visiblewhen/com.hibouhome.rcp.spikes.visiblewhen.handlers.SwitchPerspectiveHandler" command="_Mk3xfAvmEeS5WO48TpZ3sg"/>
+  <toolBarContributions xmi:id="_V1sN0AvsEeS5WO48TpZ3sg" elementId="com.hibouhome.toolbarcontribution.0" parentId="toolbar:org.eclipse.ui.main.toolbar">
+    <children xsi:type="menu:HandledToolItem" xmi:id="_aKayYAvsEeS5WO48TpZ3sg" elementId="" label="Perspective 1" command="_Mk3xfAvmEeS5WO48TpZ3sg">
+      <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_btTn0Av0EeS5WO48TpZ3sg" coreExpressionId="com.hibouhome.expression.perspective1"/>
+      <parameters xmi:id="_p2MuwAvsEeS5WO48TpZ3sg" elementId="perspectiveid" name="com.hibouhome.parameter.perspectiveId" value="com.hibouhome.perspective1"/>
+    </children>
+    <children xsi:type="menu:HandledToolItem" xmi:id="_giXL4AvsEeS5WO48TpZ3sg" elementId="" label="Perspective 2" command="_Mk3xfAvmEeS5WO48TpZ3sg">
+      <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_RIkh8AvtEeS5WO48TpZ3sg" coreExpressionId="com.hibouhome.expression.perspective2"/>
+      <parameters xmi:id="_sin4wAvsEeS5WO48TpZ3sg" elementId="perspectiveid" name="com.hibouhome.parameter.perspectiveId" value="com.hibouhome.perspective2"/>
+    </children>
+  </toolBarContributions>
+  <commands xmi:id="_Mk3xfAvmEeS5WO48TpZ3sg" elementId="com.hibouhome.rcp.spikes.visiblewhen.command.switchPerspectiveCommand" commandName="switchPerspectiveCommand">
+    <parameters xmi:id="_azHt8AvoEeS5WO48TpZ3sg" elementId="com.hibouhome.parameter.perspectiveId" name="Perspective ID" optional="false"/>
+  </commands>
+  <addons xmi:id="_Mk3xcgvmEeS5WO48TpZ3sg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_Mk3xcwvmEeS5WO48TpZ3sg" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_Mk3xdAvmEeS5WO48TpZ3sg" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_Mk3xdQvmEeS5WO48TpZ3sg" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_Mk3xdgvmEeS5WO48TpZ3sg" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_Mk3xdwvmEeS5WO48TpZ3sg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_Mk3xeAvmEeS5WO48TpZ3sg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
